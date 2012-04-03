@@ -1,0 +1,154 @@
+/* wview CSS settings */
+
+/* Global */
+
+body {
+	height: 480px;
+	background-color: black;
+	font-family: gill sans;
+	text-align: center;
+	margin: 0 0 0 0;
+	color: #54A7FF;
+}	
+
+a {
+	text-decoration: none;
+	color: #54A7FF;
+}
+
+div {
+	border: 1px solid #244857;
+}
+
+div#container {
+	-webkit-box-sizing: border-box;
+	width: 100%;
+	position: fixed;
+	border: none;
+	padding: none;
+}
+
+.date {
+	position: absolute;
+	top: 2px;
+	left: 4px;
+	text-transform: uppercase;
+	font-size: 12px;
+	color: #ABBED1;
+}
+
+.popday {
+	position: absolute;
+	top: 5px;
+	right: 185px;
+	font-size: 15px;
+	color: #696969;
+	opacity: 0.75;
+}
+
+.popnight {
+	position: absolute;
+	top: 5px;
+	right: 32px;
+	font-size: 15px;
+	color: #696969;
+	opacity: 0.75;
+}
+
+div.forecast {
+	position: relative;
+	-webkit-box-sizing: border-box;
+	width: 100%;
+	height: 74px;
+	float: left;
+	font-size: 25px;
+	line-height: 1;	
+	padding-right: 10px;
+	padding-top: 0px;
+	margin: none;
+}
+
+img.day {
+	position: absolute;
+	top: 15px;
+	left: 10px;
+	height: 80%;
+}
+
+img.night {
+	position: absolute;
+	top: 15px;
+	left: 170px;
+	height: 80%;
+}
+
+.forecasthigh {
+	position: absolute;
+	top: 15px;
+	right: 165px;
+	color: #54A7FF;
+	font-size: 40px;
+	padding-top: 10px;
+	padding-left: 5px;
+}
+
+.forecastlow {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	color: #54A7FF;
+	font-size: 40px;
+	padding-top: 15px;
+}
+
+/* miniforecast is for 50% sized ones */
+
+div.miniforecast {
+	-webkit-box-sizing: border-box;
+	position: relative;
+	width: 50%;
+	height: 76px;
+	float: left;
+	font-size: 24px;
+	margin: none;
+}
+
+.minihigh {
+	position: absolute;
+	top: 10px;
+	right: 15px;
+}
+
+.minilow {
+	position: absolute;
+	top: 40px;
+	right: 15px;
+}
+
+.minipop {
+	position: absolute;
+	top: 3px;
+	right: 67px;
+	font-size: 11px;
+	color: #696969;
+	opacity: 0.75;
+}
+
+/* Links at the bottom of the page */
+
+div.fiftylinks {
+	-webkit-box-sizing: border-box;
+	float: left;
+	background-color: #54A7FF;
+	text-transform: uppercase;
+	font-size: 18px;
+	width: 50%;
+	height: 45px;
+	padding: 12px 10px 12px 10px;
+	border: none;
+	-webkit-box-shadow: inset 0 0 25px #000;
+}
+
+.fiftylinks a {
+	color: #244857;
+}
