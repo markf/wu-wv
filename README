@@ -1,0 +1,14 @@
+wu-wv is a script intended to create an iPhone specific website which is comprised of the weather forecast supplied by the Weather Underground API.  Moreover, it is intended to be used specifically with wview weather station software (http://www.wviewweather.com), though this is only because the script includes references to generated images from wview.  
+
+Requirements
+You will need a wunderground API key from http://www.wunderground.com/weather/api/.  These are essentially free for personal use, assuming you don't abuse the number of hits they allow per day.
+
+JSON.  sudo gem install json.
+
+To use:
+
+Modify the wu-wv.rb environment variables at the top of the file.  Move the files in the public folder (forecast.css and icon files) to the public directory you specified in the appropriate variable entry.  Note that the icons may be incomplete as distributed.  If you want other icon sets, you may visit http://www.wunderground.com/weather/api/d/documentation.html#icons, or you may find/make your own and name them appropriately.  My apologies for any oversights.
+
+Once the environment variables are set, create a cron task to run the script on your desired frequency.  I run it hourly - the forecast doesn't seem to change any more frequently than that.  Example cron entry:
+
+0 * * * * /Scripts/Ruby/weather/wu-wv.rb
